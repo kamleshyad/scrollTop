@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScrollTop</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/print.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+    <div class="headersec">
+        <div class="container">
+            <h1>Header</h1>
+        </div>
+    </div>
+    <div class="bannersec">
+        <div class="container">
+            <h1>Banner</h1>
+        </div>
+    </div>
+    <div class="aboutsec">
+        <div class="container">
+            <h1>About</h1>
+        </div>
+    </div>
+    <div class="servicesec">
+        <div class="container">
+            <h1>Services</h1>
+        </div>
+    </div>
+    <div class="footersec">
+        <div class="container">
+            <h1>Footer</h1>
+        </div>
+    </div>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 100){
+                    $("#scroll").fadeIn();
+                }else{
+                    $("#scroll").fadeOut();
+                }
+            })
+            $("#scroll").click(function(){
+                $("html, body").animate({scrollTop: 0}, 600);
+                return false;
+            });
+        });
+    </script>
+</div>
+</body>
+</html>
+    

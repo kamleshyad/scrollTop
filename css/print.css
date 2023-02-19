@@ -1,0 +1,14 @@
+/*** GLOBAL SETTING ***/
+body {margin:0; padding:0;font:normal 18px 'Lexend', sans-serif; color:#010101; line-height:normal;}
+
+/*** GLOBAL SELECTORS ***/
+a{ color:#5a1613; transition: .3s ease;}
+a:hover{ color:#000000;} 
+/*Main Content*/
+.container{ width: 1290px; margin:0 auto}
+
+h1{font-size: 38px; line-height: normal; font-weight: 400;}
+.headersec,.bannersec,.aboutsec,.servicesec,.footersec{padding: 100px 0;}
+#scroll{position: fixed; right: 10px; bottom: 10px; background: #0a3d62; width: 50px; height: 50px; border-radius: 50px; box-shadow: 0 0 10px 4px rgba(0,0,0,0.5); transition: all 0.3s linear; opacity: 1 !important;}
+#scroll span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -70%); width: 0; height: 0; border: 8px solid transparent; border-bottom-color: #fff; }
+#scroll:hover{background-color: #0f69b1; }
